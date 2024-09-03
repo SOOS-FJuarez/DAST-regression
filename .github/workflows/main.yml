@@ -14,7 +14,7 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           project_name: "dast-githubActions-16 - sarif"
+           project_name: "dast-githubActions-16 - PROD"
            #api_url: "https://qa-api.soos.io/api/"
            target_url: "https://joaquinalvarez.dev"
            auth_username: "franco"
