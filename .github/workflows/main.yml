@@ -1,0 +1,21 @@
+name: SOOS DAST GitHub Actions
+on: [push]
+jobs:
+  soos_dast_baseline_analysis:
+    name: SOOS DAST Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run SOOS DAST Analysis
+        uses: soos-io/soos-dast-github-action@v8a16fca3bc847f3c41ddbb365625fc7c83cfa777
+        with:
+           client_id: ${{ secrets.SOOS_QA_CLIENT_ID }}
+           api_key: ${{ secrets.SOOS_QA_API_KEY }}
+           project_name: "dast-githubActions-16"
+           api_url: "https://qa-api.soos.io/api/"
+           target_url: "https://joaquinalvarez.dev"
+           auth_username: "franco"
+           auth_password: "P4ssw0rd!"
+           auth_login_url: "https://joaquinalvarez.dev"
+           auth_form_type: "wait_for_password"
+           verbose: "true"
+           image_tag: alpha
