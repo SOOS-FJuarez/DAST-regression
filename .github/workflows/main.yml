@@ -8,8 +8,8 @@ jobs:
       - name: Run SOOS DAST Analysis
         uses: soos-io/soos-dast-github-action@8a16fca3bc847f3c41ddbb365625fc7c83cfa777
         with:
-           client_id: ${{ secrets.SOOS_QA_CLIENT_ID }}
-           api_key: ${{ secrets.SOOS_QA_API_KEY }}
+           client_id: ${{ secrets.SOOS_CLIENT_ID }}
+           api_key: ${{ secrets.SOOS_API_KEY }}
            project_name: "dast-githubActions-16"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://joaquinalvarez.dev"
