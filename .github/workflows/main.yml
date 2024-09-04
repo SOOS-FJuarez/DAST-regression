@@ -10,6 +10,7 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
+           log_level: DEBUG
            project_name: "dast-githubActions-09"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://brokencrystals.com/"
