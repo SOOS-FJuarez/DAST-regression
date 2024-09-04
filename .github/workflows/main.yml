@@ -17,8 +17,8 @@ jobs:
            project_name: "GitHub Actions - DAST checkoutDir"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://brokencrystals.com/"
-           log_level: DEBUG
-           image_tag: alpha
+           log_level: INFO
+           #image_tag: alpha
            output_format: SARIF
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
