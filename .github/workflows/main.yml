@@ -16,6 +16,6 @@ jobs:
            auth_username: ${{ secrets.SOOS_DAST_AUTH_USERNAME }}
            auth_password: ${{ secrets.SOOS_DAST_AUTH_PASSWORD }}
            auth_login_url: "https://demoqa.com/login"
-           auth_verification_url: "https://demoqa.com/Account/v1/User/52d9d238-fc85-4f1e-9ce2-50a65397ed29"
+           auth_verification_url: "https://demoqa.com/Account/v1/User/fbe86d3e-3cd0-4d0c-a13c-d1b19f08644d" #"https://demoqa.com/Account/v1/User/52d9d238-fc85-4f1e-9ce2-50a65397ed29"
            verbose: "true"
            debug: "true"
