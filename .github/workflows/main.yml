@@ -10,7 +10,7 @@ jobs:
     
     steps:
       - name: Run SOOS DAST Analysis
-        uses: soos-io/soos-dast-github-action@553b54e3cb7de72b3b9dbaba23a4dd747f56253e
+        uses: soos-io/soos-dast-github-action@v2
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
