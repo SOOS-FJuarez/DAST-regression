@@ -16,3 +16,4 @@ jobs:
            scan_mode: "baseline"
            image_tag: alpha
            verbose: true
+           log_level: DEBUG
