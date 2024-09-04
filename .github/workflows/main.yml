@@ -10,7 +10,7 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           project_name: "dast-githubActions-12"
+           project_name: "dast-githubActions-12 request cookies"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://mail.yahoo.com/d/folders/1?reason=onboarded"
            auth_username: ${{ secrets.SOOS_DAST_AUTH_MULTIP_USERNAME }}
@@ -23,4 +23,5 @@ jobs:
            auth_second_submit_field: "login-signin"
            on_failure: "continue_on_failure"
            image_tag: alpha
+           request_cookies: "cookie1:a,cookie2:b"
            verbose: true
