@@ -15,4 +15,3 @@ jobs:
            target_url: "https://brokencrystals.com/"
            scan_mode: "baseline"
            image_tag: alpha
-           verbose: true
