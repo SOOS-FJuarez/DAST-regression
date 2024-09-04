@@ -10,17 +10,17 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           project_name: "dast-githubActions-13"
+           project_name: "dast-githubActions-14"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://mail.yahoo.com/d/folders/1?reason=onboarded"
            auth_username: ${{ secrets.SOOS_DAST_AUTH_MULTIP_USERNAME }}
-           auth_password: "${{ secrets.SOOS_DAST_AUTH_MULTIP_PASSWORD }}"
+           auth_password: "invalidPassword"
            auth_login_url: "https://login.yahoo.com"
            auth_form_type: "multi_page"
-           auth_username_field: "invalidUsernameLocator"
+           auth_username_field: "login-username"
            auth_password_field: "login-passwd"
            auth_submit_field: "login-signin"
            auth_second_submit_field: "login-signin"
            on_failure: "continue_on_failure"
-           verbose: true
            image_tag: alpha
+           verbose: true
