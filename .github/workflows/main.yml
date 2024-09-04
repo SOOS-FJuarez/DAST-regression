@@ -14,7 +14,6 @@ jobs:
            api_url: "https://qa-api.soos.io/api/"
            scan_mode: "baseline"
            target_url: "https://brokencrystals.com/"
-           request_headers: "requestHeaderInvalidFormat"
            verbose: true
            request_cookies: invalid
            image_tag: alpha
