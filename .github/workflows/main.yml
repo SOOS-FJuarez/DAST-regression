@@ -10,19 +10,15 @@ jobs:
     
     steps:
       - name: Run SOOS DAST Analysis
-        uses: soos-io/soos-dast-github-action@v2
+        uses: soos-io/soos-dast-github-action@553b54e3cb7de72b3b9dbaba23a4dd747f56253e
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           project_name: "dast-githubActions-16 - PROD"
-           #api_url: "https://qa-api.soos.io/api/"
-           target_url: "https://joaquinalvarez.dev"
-           auth_username: "franco"
-           auth_password: "P4ssw0rd!"
-           auth_login_url: "https://joaquinalvarez.dev"
-           auth_form_type: "wait_for_password"
-           verbose: "true"
-           #image_tag: alpha
+           project_name: "GitHub Actions - DAST checkoutDir"
+           api_url: "https://qa-api.soos.io/api/"
+           target_url: "https://brokencrystals.com/"
+           log_level: DEBUG
+           image_tag: alpha
            output_format: SARIF
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
