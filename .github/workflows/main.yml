@@ -22,6 +22,6 @@ jobs:
            auth_submit_field: "login-signin"
            auth_second_submit_field: "login-signin"
            on_failure: "continue_on_failure"
-           image_tag: alpha
+           image_tag: latest
            request_cookies: "cookie1:a,cookie2:b"
            verbose: true
