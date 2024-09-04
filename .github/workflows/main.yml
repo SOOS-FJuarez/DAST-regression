@@ -10,10 +10,12 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           project_name: "dast-githubActions-17"
+           project_name: "dast-githubActions-18"
            api_url: "https://qa-api.soos.io/api/"
-           scan_mode: "apiscan"
-           api_scan_format: "invalidAPIScanFormat"
-           target_url: "https://demoqa.com/"
-           verbose: "true"
-           debug: "true"
+           scan_mode: "baseline"
+           target_url: "https://brokencrystals.com/"
+           request_cookies: "cookie1:a,cookie2:b"
+           request_headers: "additionalHeader:test,additionalHeader2:test2"
+           bearer_token: "invalidValue"
+           verbose: true
+           
