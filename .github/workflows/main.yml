@@ -10,8 +10,12 @@ jobs:
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
-           log_level: DEBUG
-           project_name: "dast-githubActions-09"
+           project_name: "dast-githubActions-10"
            api_url: "https://qa-api.soos.io/api/"
-           target_url: "https://brokencrystals.com/"
-           auth_form_type: ""
+           target_url: "https://demoqa.com/profile"
+           auth_username: ${{ secrets.SOOS_DAST_AUTH_USERNAME }}
+           auth_password: ${{ secrets.SOOS_DAST_AUTH_PASSWORD }}
+           auth_login_url: "https://demoqa.com/login"
+           auth_verification_url: "https://demoqa.com/Account/v1/User/52d9d238-fc85-4f1e-9ce2-50a65397ed29"
+           verbose: "true"
+           debug: "true"
