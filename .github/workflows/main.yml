@@ -15,5 +15,4 @@ jobs:
            scan_mode: "baseline"
            target_url: "https://brokencrystals.com/"
            request_headers: "requestHeaderInvalidFormat"
-           verbose: "true"
-           image_tag: alpha
+           verbose: true
