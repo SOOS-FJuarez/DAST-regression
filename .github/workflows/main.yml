@@ -10,7 +10,7 @@ jobs:
     
     steps:
       - name: Run SOOS DAST Analysis
-        uses: soos-io/soos-dast-github-action@v2
+        uses: soos-io/soos-dast-github-action@45e831a3cf4c23159c94cf87afda1a7e6e5ff964
         with:
            client_id: ${{ secrets.SOOS_CLIENT_ID }}
            api_key: ${{ secrets.SOOS_API_KEY }}
@@ -18,8 +18,8 @@ jobs:
            #api_url: "https://qa-api.soos.io/api/"
            target_url: "https://brokencrystals.com/"
            log_level: INFO
-           #image_tag: alpha
-           verbose: true
+           image_tag: beta
+           #verbose: true
            output_format: SARIF
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
