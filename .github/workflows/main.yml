@@ -17,7 +17,7 @@ jobs:
            project_name: "GitHub Actions - DAST"
            api_url: "https://qa-api.soos.io/api/"
            target_url: "https://brokencrystals.com/"
-           log_level: INFO
+           log_level: DEBUG
            image_tag: beta
            #verbose: true
            output_format: SARIF
